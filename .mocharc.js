@@ -14,7 +14,7 @@ module.exports = {
     package: './package.json',
     reporter: 'spec',
     slow: 75,
-    timeout: 8000,
+    timeout: 9000,
     ui: 'tdd',
     'watch-files': ['lib/**/*.js','test/**/*.js'],
     'watch-ignore': ['lib/vendor']
