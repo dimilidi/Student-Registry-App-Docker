@@ -26,11 +26,7 @@
                     echo 'Deploy to Staging'
                 }   
             }
-        stage('Approval for Production Deployment') {
-            steps {
-                input message: 'Approove deploymet', ok: 'Deploy'
-            }   
-        }
+      
         stage('Deploy to Production') {
             steps {
                 echo 'Deploy to Production'
