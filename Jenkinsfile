@@ -18,22 +18,23 @@
                         bat 'npm test'
                     }   
                 }
-                stage('Deploy to Staging') {
-                    steps {
-                        echo 'Deploy to Staging'
-                    }   
-                }
-                stage('Approval for Production Deployment') {
-                    steps {
-                        input message: 'Approove deploymet', ok: 'Deploy'
-                    }   
-                }
-                stage('Deploy to Production') {
-                    steps {
-                        echo 'Deploy to Production'
-                    }   
-                }
+              
             }
+        }
+        stage('Deploy to Staging') {
+                steps {
+                    echo 'Deploy to Staging'
+                }   
+            }
+        stage('Approval for Production Deployment') {
+            steps {
+                input message: 'Approove deploymet', ok: 'Deploy'
+            }   
+        }
+        stage('Deploy to Production') {
+            steps {
+                echo 'Deploy to Production'
+            }   
         }
     }
 }
